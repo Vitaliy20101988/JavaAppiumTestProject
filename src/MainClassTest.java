@@ -13,4 +13,10 @@ public class MainClassTest {
         Assert.assertEquals(errorMessage, expectedResult, actualResult);
     }
 
+    @Test
+    public void testGetClassNumber() {
+        String errorMessage = "Variable have to be more than 45.";
+        Assert.assertTrue(errorMessage, mainClass.getClass_number() > 45);
+    }
+
 }
